@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+
+
+ul.topnav {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+  		position: fixed; 
+  		top: 0;
+  		left:0;
+  		width: 100%;
+  		margin-top: 0;
+ 		margin-left: 0;
+ 		list-style-type: none;
+  		padding: 0px;
+ 		overflow: visible;
+  		background-color: #ffffff;
+  		border-bottom: 1px solid #bbb;
+        
+	   }
+
+ul.topnav li {float: left;}
+
+ul.topnav li:first-child { border-right: 1px solid #bbb;}
+
+
+ul.topnav li a {
+  			display: block;
+  			max-width: 165px;
+  			height: 50px;
+  			line-height: 50px;
+  			color: #1C8200;
+  			text-align: center;
+  			padding: 10px 30px;
+  			text-decoration: none;
+  			font-size: 14px;
+		}	
+
+ul.topnav li a:hover:not(.active) {color: #bbb}
+
+ul.topnav li a.active {color: #FFA500;}
+
+
+
+
+.sidenav {
+  		font-family: "Comic Sans MS", cursive, sans-serif;
+        height: 100%;
+  		width: 225px;
+  		position: fixed;
+  		z-index: 1;
+  		margin-top: 70px;
+  		top: 0;
+  		left: 0;
+  		background-color: transparent;
+  		overflow-x: hidden;
+  		padding-top: 0px;
+  		border-right: 1px solid #bbb;
+        
+	  }
+    
+
+    
+.sidenav a {
+  		padding: 10px 8px 6px 20px;
+  		text-decoration: none;
+  		font-size: 14px;
+  		color: #1C8200;
+        display: block;
+  		width: 225px;
+        
+	    }
+
+.sidenav a:hover {
+    color: #bbb;
+    }
+
+
+.main {
+  margin-left: 225px; /* Same as the width of the sidenav */
+  margin-top: 70px;
+  padding: 20px 50px 10px 50px;
+  overflow: hidden;
+    }
+    
+
+@media screen and (max-height: 450px) {	
+						.sidenav {padding-top: 15px;}
+  						.sidenav a {font-size: 18px;}
+				      }
+
+
+@media screen and (max-width: 978px) {
+  						ul.topnav { border-bottom: none; background-color: transparent;} 
+  						ul.topnav li {float: none; border-right: 1px solid #bbb; border-bottom: 1px solid #bbb; width:225px;}
+  						.sidenav {display: none;}
+  						.main {margin-top: 0px;}
+
+				      }
+
+
+.gallery {
+  margin: 5px;
+  float: left;
+  width: 200px;
+}
+
+.gallery img {
+  width: 100%;
+    height: auto;
+  
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+
+
+
+
+<ul class="topnav">
+  			<li><a href="#home"><img src="Images/img1.png" alt="An Seanchaí at Sea" style="height:50px;width:165px"></a></li>
+  			<li><a href="#videos">VIDEOS</a></li>
+ 			<li><a class="active" href="#gallery">GALLERY</a></li>
+  			<li><a href="#ship's blog">SHIP'S LOG</a></li>
+  			<li><a href="#route">ROUTE</a></li>
+  			<li><a href="#about us">ABOUT US</a></li>
+  			<li><a href="#contact us">CONTACT US</a></li>
+</ul>
+
+<div class="sidenav">
+    <a><i><b> Album </b></i></a>
+    <a href="#Maiden_Voyage"> Australia </a>
+    
+</div>
+    
+
+<div class="main">
+    
+    <h1>Gallery</h1>
+			<h2>Earring</h2>
+  		
+    
+
+<div class="gallery">
+  <a target="blank" href="Images/earring.jpg"> <img src="Images/earring.jpg" width="auto" height="auto">
+  </a>
+    </div>
+
+    </div>
+    
+
+
+</body>
+</html>
