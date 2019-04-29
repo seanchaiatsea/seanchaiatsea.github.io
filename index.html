@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+
+
+ul.topnav {
+  		position: fixed; 
+  		top: 0;
+  		left:0;
+  		width: 100%;
+  		margin-top: 0;
+ 		margin-left: 0;
+ 		list-style-type: none;
+  		padding: 0px;
+ 		overflow: hidden;
+  		background-color: #ffffff;
+  		border-bottom: 1px solid #bbb;
+	   }
+
+ul.topnav li {float: left;}
+
+ul.topnav li:first-child { border-right: 1px solid #bbb;}
+
+
+ul.topnav li a {
+  			display: block;
+  			max-width: 165px;
+  			height: 50px;
+  			line-height: 50px;
+  			color: #1C8200;
+  			text-align: center;
+  			padding: 10px 30px;
+  			text-decoration: none;
+  			font-size: 14px;
+		}	
+
+ul.topnav li a:hover:not(.active) {color: #bbb}
+
+ul.topnav li a.active {color: #FFA500;}
+
+
+
+
+.sidenav {
+  		height: 100%;
+  		width: 225px;
+  		position: fixed;
+  		z-index: 1;
+  		margin-top: 70px;
+  		top: 0;
+  		left: 0;
+  		background-color: transparent;
+  		overflow-x: hidden;
+  		padding-top: 0px;
+  		border-right: 1px solid #bbb;
+	  }
+
+
+.sidenav a {
+  		padding: 6px 8px 6px 16px;
+  		text-decoration: none;
+  		font-size: 25px;
+  		color: #1C8200;
+  		display: block;
+  		width: 165px;
+	    }
+
+.sidenav a:hover {color: #f1f1f1;}
+
+
+
+.main {
+  margin-left: 225px; /* Same as the width of the sidenav */
+  margin-top: 70px;
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+
+
+
+@media screen and (max-height: 450px) {	
+						.sidenav {padding-top: 15px;}
+  						.sidenav a {font-size: 18px;}
+				      }
+
+
+@media screen and (max-width: 978px) {
+  						ul.topnav { border-bottom: none; background-colour: transparent;} 
+  						ul.topnav li {float: none; border-right: 1px solid #bbb; border-bottom: 1px solid #bbb; width:225px;}
+  						.sidenav {display: none;}
+  						.main {margin-top: 0px;}
+
+				      }
+
+
+
+
+
+</style>
+</head>
+
+
+<body>
+
+
+
+
+
+<ul class="topnav">
+  			<li><a class="active" href="#home"><img src="Images/img1.png" alt="An Seanchaí at Sea" style="height:50px;width:165px"></a></li>
+  			<li><a href="#videos">VIDEOS</a></li>
+ 			<li><a href="#gallery">GALLERY</a></li>
+  			<li><a href="#ship's blog">SHIP'S LOG</a></li>
+  			<li><a href="#route">ROUTE</a></li>
+  			<li><a href="#about us">ABOUT US</a></li>
+  			<li><a href="#contact us">CONTACT US</a></li>
+</ul>
+
+
+<div class="sidenav">
+
+  		<a href="#newsfeed">Newsfeed</a>
+</div>
+
+
+<div class="main">
+
+  			<h2>Main Body</h2>
+			<p>"insert text here"</p>
+  			<p>Scroll down the page to see the result.</p>
+
+</div>
+
+
+
+
+</body>
+</html>
